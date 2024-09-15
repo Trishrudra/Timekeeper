@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <header id="buttons">
+      <h1>Welcome to Timekeeper</h1>
+      <h2 id="time" style="text-align: center; color: white; font-size: 50px;">Time</h2>
+    </header>
+    <section id="stopwatch">
+      <h2 style="text-align: center">Stopwatch</h2>
+      <p id="stopwatch time" style="color: white; font-size: 100px;">00.00</p>
+      <button id="start_stopwatch" onclick="stopwatch()">Start</button>
+      <button class="disabled" id="stop_stopwatch" onclick="stop_stopwatch()">Pause</button>
+      <button class="disabled" id="reset_stopwatch" onclick="reset_stopwatch()">Reset</button>
+      <article>
+        <button class="disabled" id="lap_stopwatch" onclick="lap_stopwatch()">Mark</button>
+        <hr>
+        <p id="laps" style="color: white; font-size: 40px;">Marks&nbsp;<br></p>
+      </article>
+    </section>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
