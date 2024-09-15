@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timekeeper</title>
     <link rel="stylesheet" href="assets/style.css">
+    <!-- The font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
   </head>
   <body>
     <header id="buttons">
@@ -11,15 +15,13 @@
       <h2 id="time" style="text-align: center; color: white; font-size: 50px;">Time</h2>
     </header>
     <section id="stopwatch">
-      <h2 style="text-align: center">Stopwatch</h2>
       <p id="stopwatch time" style="color: white; font-size: 100px;">00.00</p>
       <button id="start_stopwatch" onclick="stopwatch()">Start</button>
       <button class="disabled" id="stop_stopwatch" onclick="stop_stopwatch()">Pause</button>
       <button class="disabled" id="reset_stopwatch" onclick="reset_stopwatch()">Reset</button>
       <article>
         <button class="disabled" id="lap_stopwatch" onclick="lap_stopwatch()">Mark</button>
-        <hr>
-        <p id="laps" style="color: white; font-size: 40px;">Marks&nbsp;<br></p>
+        <p id="laps" style="color: white; font-size: 40px;">Marks:&nbsp;<br></p>
       </article>
     </section>
     <script src="assets/script.js"></script>
